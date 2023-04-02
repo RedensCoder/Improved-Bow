@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " BS",
+    "B S",
+    " BS"
+  ],
+  "key": {
+    "B": {
+      "item": "improvedbow:blood"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "improvedbow:blood_bow"
+  }
+}

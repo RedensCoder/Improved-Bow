@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#G#",
+    "GSG",
+    "#G#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:arrow"
+    },
+    "G": {
+      "item": "improvedbow:terablood_block"
+    },
+    "S": {
+      "item": "minecraft:spyglass"
+    }
+  },
+  "result": {
+    "item": "improvedbow:terascope",
+    "count": 1
+  }
+}

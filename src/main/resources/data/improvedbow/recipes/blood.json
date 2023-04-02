@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "improvedbow:blood_ore"
+  },
+  "result": "improvedbow:blood",
+  "experience": 0.5,
+  "cookingtime": 400
+}

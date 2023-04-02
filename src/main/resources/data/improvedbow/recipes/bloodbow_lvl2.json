@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " T ",
+    "TBT",
+    " T "
+  ],
+  "key": {
+    "T": {
+      "item": "improvedbow:terablood"
+    },
+    "B": {
+      "item": "improvedbow:blood_bow"
+    }
+  },
+  "result": {
+    "item": "improvedbow:blood_bow_lvl2",
+    "count": 1
+  }
+}

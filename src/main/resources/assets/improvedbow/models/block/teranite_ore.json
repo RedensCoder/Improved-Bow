@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "improvedbow:block/teranite_ore"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "improvedbow:teranite_ore"
+  },
+  "result": "improvedbow:teranite",
+  "experience": 1.0,
+  "cookingtime": 800
+}

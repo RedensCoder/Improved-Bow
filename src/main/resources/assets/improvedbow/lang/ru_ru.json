@@ -1,0 +1,38 @@
+{
+  "itemGroup.ib_tab": "Improved Bow",
+
+  "item.improvedbow.blood": "Кровь",
+  "item.improvedbow.teranite": "Теранит",
+  "item.improvedbow.terablood": "Тераблад",
+  "item.improvedbow.terascope": "Тераскоп",
+  "item.improvedbow.dragon_eye": "Драконий глаз",
+  "item.improvedbow.blood_bow": "Кровавый лук",
+  "item.improvedbow.blood_bow_lvl2": "Терабладовый лук",
+  "item.improvedbow.blood_bow_lvl3": "Теранитовый лук",
+  "item.improvedbow.blood_bow_lvl4": "Супер терабладовый лук",
+  "item.improvedbow.blood_bow_lvl5": "Тераскоповый лук",
+  "item.improvedbow.blood_bow_lvl6": "Горящий лук",
+  "item.improvedbow.blood_bow_lvl7": "Эхо лук",
+  "item.improvedbow.blood_bow_lvl8": "Кристальный лук",
+  "item.improvedbow.blood_bow_lvl9": "Незер лук",
+  "item.improvedbow.blood_bow_lvl10": "Драконовый лук",
+
+  "block.improvedbow.blood_ore": "Кровавая руда",
+  "block.improvedbow.deepslate_blood_ore": "Глубинная кровавая руда",
+  "block.improvedbow.teranite_ore": "Теранитовая руда",
+  "block.improvedbow.deepslate_teranite_ore": "Глубинная теранитовая руда",
+  "block.improvedbow.terablood_block": "Терабладовый блок",
+  "block.improvedbow.bow_charger": "Улучшатель лука",
+
+  "tooltip.improvedbow.press_shift": "Нажми SHIFT для большей информации",
+  "tooltip.improvedbow.level_one_info": "◄Уровень 1 +5% Скорость зарядки",
+  "tooltip.improvedbow.level_two_info": "◄Уровень 2 +5% Урона",
+  "tooltip.improvedbow.level_three_info": "◄Уровень 3 +10% Скорость зарядки",
+  "tooltip.improvedbow.level_four_info": "◄Уровень 4 +10% Урона",
+  "tooltip.improvedbow.level_five_info": "◄Уровень 5 Мультишот",
+  "tooltip.improvedbow.level_six_info": "◄Уровень 6 Горящая стрела",
+  "tooltip.improvedbow.level_seven_info": "◄Уровень 7 +20% Скорость зарядки и +15% Урона",
+  "tooltip.improvedbow.level_eight_info": "◄Уровень 8 Бесконечность",
+  "tooltip.improvedbow.level_nine_info": "◄Уровень 9 +10 Скорость зарядки и +10 Урона",
+  "tooltip.improvedbow.level_ten_info": "◄Уровень 10 Самонаведение"
+}

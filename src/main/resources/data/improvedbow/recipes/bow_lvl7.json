@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#G#",
+    "EBE",
+    "#G#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:echo_shard"
+    },
+    "G": {
+      "item": "minecraft:ghast_tear"
+    },
+    "E": {
+      "item": "minecraft:ender_eye"
+    },
+    "B": {
+      "item": "improvedbow:blood_bow_lvl6"
+    }
+  },
+  "result": {
+    "item": "improvedbow:blood_bow_lvl7",
+    "count": 1
+  }
+}

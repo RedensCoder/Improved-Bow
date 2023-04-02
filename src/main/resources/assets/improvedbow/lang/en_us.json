@@ -1,0 +1,38 @@
+{
+  "itemGroup.ib_tab": "Improved Bow",
+
+  "item.improvedbow.blood": "Blood",
+  "item.improvedbow.teranite": "Teranite",
+  "item.improvedbow.terablood": "Terablood",
+  "item.improvedbow.terascope": "Terascope",
+  "item.improvedbow.dragon_eye": "Dragon Eye",
+  "item.improvedbow.blood_bow": "Blood Bow",
+  "item.improvedbow.blood_bow_lvl2": "Terablood Bow",
+  "item.improvedbow.blood_bow_lvl3": "Teranite Bow",
+  "item.improvedbow.blood_bow_lvl4": "Super Terablood Bow",
+  "item.improvedbow.blood_bow_lvl5": "Terascope Bow",
+  "item.improvedbow.blood_bow_lvl6": "Burning Bow",
+  "item.improvedbow.blood_bow_lvl7": "Echo Bow",
+  "item.improvedbow.blood_bow_lvl8": "Crystal Bow",
+  "item.improvedbow.blood_bow_lvl9": "Nether Bow",
+  "item.improvedbow.blood_bow_lvl10": "Dragon Bow",
+
+  "block.improvedbow.blood_ore": "Blood Ore",
+  "block.improvedbow.deepslate_blood_ore": "Deepslate Blood Ore",
+  "block.improvedbow.teranite_ore": "Teranite Ore",
+  "block.improvedbow.deepslate_teranite_ore": "Deepslate Teranite Ore",
+  "block.improvedbow.terablood_block": "Terablood Block",
+  "block.improvedbow.bow_charger": "Bow Charger",
+
+  "tooltip.improvedbow.press_shift": "Press SHIFT for more info",
+  "tooltip.improvedbow.level_one_info": "◄Level 1 +5% Charge Speed",
+  "tooltip.improvedbow.level_two_info": "◄Level 2 +5% Damage",
+  "tooltip.improvedbow.level_three_info": "◄Level 3 +10% Charge Speed",
+  "tooltip.improvedbow.level_four_info": "◄Level 4 +10% Damage",
+  "tooltip.improvedbow.level_five_info": "◄Level 5 Multishot",
+  "tooltip.improvedbow.level_six_info": "◄Level 6 Burning arrow",
+  "tooltip.improvedbow.level_seven_info": "◄Level 7 +20% Speed Charging And +15% Damage",
+  "tooltip.improvedbow.level_eight_info": "◄Level 8 Infinity Arrow",
+  "tooltip.improvedbow.level_nine_info": "◄Level 9 +10 Speed Charge And +10 Damage",
+  "tooltip.improvedbow.level_ten_info": "◄Level 10 Aim"
+}

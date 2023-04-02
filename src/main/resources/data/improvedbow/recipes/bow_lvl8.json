@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#E#",
+    "EOE",
+    "#E#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:totem_of_undying"
+    },
+    "E": {
+      "item": "minecraft:end_crystal"
+    },
+    "O": {
+      "item": "improvedbow:blood_bow_lvl7"
+    }
+  },
+  "result": {
+    "item": "improvedbow:blood_bow_lvl8",
+    "count": 1
+  }
+}

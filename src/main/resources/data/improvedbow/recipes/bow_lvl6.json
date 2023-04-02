@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#B#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:blaze_powder"
+    },
+    "B": {
+      "item": "improvedbow:blood_bow_lvl5"
+    }
+  },
+  "result": {
+    "item": "improvedbow:blood_bow_lvl6",
+    "count": 1
+  }
+}

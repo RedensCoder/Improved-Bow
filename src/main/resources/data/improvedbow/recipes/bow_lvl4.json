@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "improvedbow:blood_bow_lvl3"
+  },
+  "addition": {
+    "item": "improvedbow:terablood_block"
+  },
+  "result": {
+    "item": "improvedbow:blood_bow_lvl4"
+  }
+}

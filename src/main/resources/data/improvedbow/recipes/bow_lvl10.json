@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "improvedbow:blood_bow_lvl9"
+  },
+  "addition": {
+    "item": "improvedbow:dragon_eye"
+  },
+  "result": {
+    "item": "improvedbow:blood_bow_lvl10"
+  }
+}
