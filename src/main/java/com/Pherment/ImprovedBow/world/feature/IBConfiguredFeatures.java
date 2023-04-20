@@ -28,9 +28,9 @@ public class IBConfiguredFeatures {
     ));
 
     public static final RegistryObject<ConfiguredFeature<?, ?>> BLOOD_ORE = CONFIG_FEATURES.register("blood_ore",
-            ()-> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_BLOOD_ORES.get(), 5)));
+            ()-> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_BLOOD_ORES.get(), 9)));
     public static final RegistryObject<ConfiguredFeature<?, ?>> TERANITE_ORE = CONFIG_FEATURES.register("teranite_ore",
-            ()-> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_TERANITE_ORES.get(), 4)));
+            ()-> new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(OVERWORLD_TERANITE_ORES.get(), 7)));
 
     public static void register(IEventBus eventBus) {
         CONFIG_FEATURES.register(eventBus);

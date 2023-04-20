@@ -24,6 +24,28 @@
   "block.improvedbow.terablood_block": "Terablood Block",
   "block.improvedbow.bow_charger": "Bow Charger",
 
+  "advancements.improvedbow.get_bow_one.title": "Improved Bow",
+  "advancements.improvedbow.get_bow_one.description": "Get Your First Bow!",
+  "advancements.improvedbow.get_bow_two.title": "Terablood",
+  "advancements.improvedbow.get_bow_two.description": "Get Terablood Bow!",
+  "advancements.improvedbow.get_bow_three.title": "Teranite Assassin",
+  "advancements.improvedbow.get_bow_three.description": "Get TeraniteBow!",
+  "advancements.improvedbow.get_bow_four.title": "Super Bow",
+  "advancements.improvedbow.get_bow_four.description": "Get Super Terablood Bow!",
+  "advancements.improvedbow.get_bow_five.title": "Get On The Wall!",
+  "advancements.improvedbow.get_bow_five.description": "Get Terascope Bow!",
+  "advancements.improvedbow.get_bow_six.title": "Burn, Burn Bright!",
+  "advancements.improvedbow.get_bow_six.description": "Get Burning Bow!",
+  "advancements.improvedbow.get_bow_seven.title": "Is There Anyone Here?",
+  "advancements.improvedbow.get_bow_seven.description": "Get Echo Bow!",
+  "advancements.improvedbow.get_bow_eight.title": "To Infinity And Beyond!",
+  "advancements.improvedbow.get_bow_eight.description": "Get Crystal Bow!",
+  "advancements.improvedbow.get_bow_nine.title": "This is NETHER!",
+  "advancements.improvedbow.get_bow_nine.description": "Get Nether Bow!",
+  "advancements.improvedbow.get_bow_ten.title": "You Became The One You Despised",
+  "advancements.improvedbow.get_bow_ten.description": "Get Dragon Bow!",
+
+
   "tooltip.improvedbow.press_shift": "Press SHIFT for more info",
   "tooltip.improvedbow.level_one_info": "◄Level 1 +5% Charge Speed",
   "tooltip.improvedbow.level_two_info": "◄Level 2 +5% Damage",
@@ -34,5 +56,5 @@
   "tooltip.improvedbow.level_seven_info": "◄Level 7 +20% Speed Charging And +15% Damage",
   "tooltip.improvedbow.level_eight_info": "◄Level 8 Infinity Arrow",
   "tooltip.improvedbow.level_nine_info": "◄Level 9 +10 Speed Charge And +10 Damage",
-  "tooltip.improvedbow.level_ten_info": "◄Level 10 Aim"
+  "tooltip.improvedbow.level_ten_info": "◄Level 10 +20 Damage And Machine Gun Speed"
 }

@@ -40,8 +40,6 @@ public class BloodBow extends BowItem {
         return super.customArrow(arrow);
     }
 
-
-
     @Override
     public void releaseUsing(ItemStack pStack, Level p_40668_, LivingEntity p_40669_, int p_40670_) {
         if (p_40669_ instanceof Player player) {
@@ -76,20 +74,6 @@ public class BloodBow extends BowItem {
 
                         if (f == 1.0F) {
                             abstractarrow.setCritArrow(true);
-                        }
-
-                        int j = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, pStack);
-                        if (j > 0) {
-                            abstractarrow.setBaseDamage(abstractarrow.getBaseDamage() + (double)j * 0.5D + 0.5D);
-                        }
-
-                        int k = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.PUNCH_ARROWS, pStack);
-                        if (k > 0) {
-                            abstractarrow.setKnockback(k);
-                        }
-
-                        if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.FLAMING_ARROWS, pStack) > 0) {
-                            abstractarrow.setSecondsOnFire(100);
                         }
 
                         if (pLevel >= 6) {

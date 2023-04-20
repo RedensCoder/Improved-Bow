@@ -15,7 +15,7 @@
   "item.improvedbow.blood_bow_lvl7": "Эхо лук",
   "item.improvedbow.blood_bow_lvl8": "Кристальный лук",
   "item.improvedbow.blood_bow_lvl9": "Незер лук",
-  "item.improvedbow.blood_bow_lvl10": "Драконовый лук",
+  "item.improvedbow.blood_bow_lvl10": "Драконий лук",
 
   "block.improvedbow.blood_ore": "Кровавая руда",
   "block.improvedbow.deepslate_blood_ore": "Глубинная кровавая руда",
@@ -23,6 +23,27 @@
   "block.improvedbow.deepslate_teranite_ore": "Глубинная теранитовая руда",
   "block.improvedbow.terablood_block": "Терабладовый блок",
   "block.improvedbow.bow_charger": "Улучшатель лука",
+
+  "advancements.improvedbow.get_bow_one.title": "Improved Bow",
+  "advancements.improvedbow.get_bow_one.description": "Получите свой первый лук!",
+  "advancements.improvedbow.get_bow_two.title": "Тераблад",
+  "advancements.improvedbow.get_bow_two.description": "Получите Терабладовый лук!",
+  "advancements.improvedbow.get_bow_three.title": "Теранитовый Ассассин",
+  "advancements.improvedbow.get_bow_three.description": "Получите Теранитовый лук!",
+  "advancements.improvedbow.get_bow_four.title": "Супер лук",
+  "advancements.improvedbow.get_bow_four.description": "Получите Супер Терабладовый лук!",
+  "advancements.improvedbow.get_bow_five.title": "Становитесь в стеночку!",
+  "advancements.improvedbow.get_bow_five.description": "Получите Тераскоповый лук!",
+  "advancements.improvedbow.get_bow_six.title": "Гори, гори ясно!",
+  "advancements.improvedbow.get_bow_six.description": "Получите Горящий лук!",
+  "advancements.improvedbow.get_bow_seven.title": "Здесь кто-нибудь есть?",
+  "advancements.improvedbow.get_bow_seven.description": "Получите Эхо лук!",
+  "advancements.improvedbow.get_bow_eight.title": "Бесконечность непредел!",
+  "advancements.improvedbow.get_bow_eight.description": "Получите Кристальный лук!",
+  "advancements.improvedbow.get_bow_nine.title": "Это АД!",
+  "advancements.improvedbow.get_bow_nine.description": "Получите Незер лук!",
+  "advancements.improvedbow.get_bow_ten.title": "Ты стал тем кого презирал",
+  "advancements.improvedbow.get_bow_ten.description": "Получите Драконий лук!",
 
   "tooltip.improvedbow.press_shift": "Нажми SHIFT для большей информации",
   "tooltip.improvedbow.level_one_info": "◄Уровень 1 +5% Скорость зарядки",
@@ -34,5 +55,5 @@
   "tooltip.improvedbow.level_seven_info": "◄Уровень 7 +20% Скорость зарядки и +15% Урона",
   "tooltip.improvedbow.level_eight_info": "◄Уровень 8 Бесконечность",
   "tooltip.improvedbow.level_nine_info": "◄Уровень 9 +10 Скорость зарядки и +10 Урона",
-  "tooltip.improvedbow.level_ten_info": "◄Уровень 10 Самонаведение"
+  "tooltip.improvedbow.level_ten_info": "◄Уровень 10 +20 Урона и Пулемётная скорость"
 }
