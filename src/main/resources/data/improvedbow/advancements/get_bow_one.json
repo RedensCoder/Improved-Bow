@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "improvedbow:blood_bow"
+    },
+    "title": {
+      "translate": "advancements.improvedbow.get_bow_one.title"
+    },
+    "description": {
+      "translate": "advancements.improvedbow.get_bow_one.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "background": "minecraft:textures/block/stone.png"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "improvedbow:blood_bow"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

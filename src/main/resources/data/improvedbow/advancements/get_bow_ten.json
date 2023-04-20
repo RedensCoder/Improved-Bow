@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "improvedbow:blood_bow_lvl10"
+    },
+    "title": {
+      "translate": "advancements.improvedbow.get_bow_ten.title"
+    },
+    "description": {
+      "translate": "advancements.improvedbow.get_bow_ten.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "parent": "improvedbow:get_bow_nine",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "improvedbow:blood_bow_lvl10"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
