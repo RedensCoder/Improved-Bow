@@ -5,7 +5,7 @@
   "item.improvedbow.teranite": "Теранит",
   "item.improvedbow.terablood": "Тераблад",
   "item.improvedbow.terascope": "Тераскоп",
-  "item.improvedbow.dragon_eye": "Драконий глаз",
+  "item.improvedbow.dragon_eye": "Глаз дракона",
   "item.improvedbow.blood_bow": "Кровавый лук",
   "item.improvedbow.blood_bow_lvl2": "Терабладовый лук",
   "item.improvedbow.blood_bow_lvl3": "Теранитовый лук",
@@ -22,7 +22,7 @@
   "block.improvedbow.teranite_ore": "Теранитовая руда",
   "block.improvedbow.deepslate_teranite_ore": "Глубинная теранитовая руда",
   "block.improvedbow.terablood_block": "Терабладовый блок",
-  "block.improvedbow.bow_charger": "Улучшатель лука",
+  "block.improvedbow.bow_charger": "Стол улучшений",
 
   "advancements.improvedbow.get_bow_one.title": "Improved Bow",
   "advancements.improvedbow.get_bow_one.description": "Получите свой первый лук!",
@@ -44,6 +44,8 @@
   "advancements.improvedbow.get_bow_nine.description": "Получите Незер лук!",
   "advancements.improvedbow.get_bow_ten.title": "Ты стал тем кого презирал",
   "advancements.improvedbow.get_bow_ten.description": "Получите Драконий лук!",
+
+  "label.improvedbow.bow_Charger": "Стол улучшений",
 
   "tooltip.improvedbow.press_shift": "Нажми SHIFT для большей информации",
   "tooltip.improvedbow.level_one_info": "◄Уровень 1 +5% Скорость зарядки",

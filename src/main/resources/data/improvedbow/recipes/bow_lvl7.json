@@ -1,26 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "#G#",
-    "EBE",
-    "#G#"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:echo_shard"
-    },
-    "G": {
-      "item": "minecraft:ghast_tear"
-    },
-    "E": {
-      "item": "minecraft:ender_eye"
-    },
-    "B": {
+  "type": "improvedbow:bow_charger",
+  "ingredients": [
+    {
       "item": "improvedbow:blood_bow_lvl6"
+    },
+    {
+      "item": "minecraft:echo_shard"
     }
-  },
-  "result": {
-    "item": "improvedbow:blood_bow_lvl7",
-    "count": 1
+  ],
+  "soul_collectors": 15,
+  "output": {
+    "item": "improvedbow:blood_bow_lvl7"
   }
 }

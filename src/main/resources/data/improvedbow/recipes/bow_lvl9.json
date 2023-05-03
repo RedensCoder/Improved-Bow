@@ -1,12 +1,15 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "improvedbow:blood_bow_lvl8"
-  },
-  "addition": {
-    "item": "minecraft:nether_star"
-  },
-  "result": {
+  "type": "improvedbow:bow_charger",
+  "ingredients": [
+    {
+      "item": "improvedbow:blood_bow_lvl8"
+    },
+    {
+      "item": "minecraft:nether_star"
+    }
+  ],
+  "soul_collectors": 20,
+  "output": {
     "item": "improvedbow:blood_bow_lvl9"
   }
 }

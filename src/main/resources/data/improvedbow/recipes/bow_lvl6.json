@@ -1,20 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    " # ",
-    "#B#",
-    " # "
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:blaze_powder"
-    },
-    "B": {
+  "type": "improvedbow:bow_charger",
+  "ingredients": [
+    {
       "item": "improvedbow:blood_bow_lvl5"
+    },
+    {
+      "item": "minecraft:blaze_powder"
     }
-  },
-  "result": {
-    "item": "improvedbow:blood_bow_lvl6",
-    "count": 1
+  ],
+  "soul_collectors": 10,
+  "output": {
+    "item": "improvedbow:blood_bow_lvl6"
   }
 }

@@ -1,6 +1,7 @@
 package com.Pherment.ImprovedBow.blocks;
 
 import com.Pherment.ImprovedBow.ImprovedBow;
+import com.Pherment.ImprovedBow.blocks.custom.BowCharger;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -27,7 +28,7 @@ public class IBBlock {
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(5f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> BOW_CHARGER = BLOCK.register("bow_charger",
-            ()-> new Block(BlockBehaviour.Properties.of(Material.METAL).strength(5f).requiresCorrectToolForDrops()));
+            ()-> new BowCharger(BlockBehaviour.Properties.of(Material.METAL).strength(4f).requiresCorrectToolForDrops().noOcclusion()));
 
     public static void register(IEventBus eventBus) {
         BLOCK.register(eventBus);

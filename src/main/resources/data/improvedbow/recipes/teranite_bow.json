@@ -1,20 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "TTT",
-    "TBT",
-    "TTT"
-  ],
-  "key": {
-    "T": {
-      "item": "improvedbow:teranite"
-    },
-    "B": {
+  "type": "improvedbow:bow_charger",
+  "ingredients": [
+    {
       "item": "improvedbow:blood_bow_lvl2"
+    },
+    {
+      "item": "improvedbow:teranite"
     }
-  },
-  "result": {
-    "item": "improvedbow:blood_bow_lvl3",
-    "count": 1
+  ],
+  "soul_collectors": 2,
+  "output": {
+    "item": "improvedbow:blood_bow_lvl3"
   }
 }

@@ -1,12 +1,15 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "improvedbow:blood_bow_lvl4"
-  },
-  "addition": {
-    "item": "improvedbow:terascope"
-  },
-  "result": {
+  "type": "improvedbow:bow_charger",
+  "ingredients": [
+    {
+      "item": "improvedbow:blood_bow_lvl4"
+    },
+    {
+      "item": "improvedbow:terascope"
+    }
+  ],
+  "soul_collectors": 10,
+  "output": {
     "item": "improvedbow:blood_bow_lvl5"
   }
 }

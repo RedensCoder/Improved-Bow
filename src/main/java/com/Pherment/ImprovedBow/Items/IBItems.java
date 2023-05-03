@@ -3,6 +3,7 @@ package com.Pherment.ImprovedBow.Items;
 import com.Pherment.ImprovedBow.IBCreativeTab;
 import com.Pherment.ImprovedBow.ImprovedBow;
 import com.Pherment.ImprovedBow.Items.custom.BloodBow;
+import com.Pherment.ImprovedBow.Items.custom.BowChargerItemAnimated;
 import com.Pherment.ImprovedBow.blocks.IBBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -60,7 +61,7 @@ public class IBItems {
     public static final RegistryObject<Item> TERABLOOD_BLOCK = ITEM.register("terablood_block",
             ()-> new BlockItem(IBBlock.TERABLOOD_BLOCK.get() ,new Item.Properties().tab(IBCreativeTab.TAB)));
     public static final RegistryObject<Item> BOW_CHARGER = ITEM.register("bow_charger",
-            ()-> new BlockItem(IBBlock.BOW_CHARGER.get() ,new Item.Properties().tab(IBCreativeTab.TAB)));
+            ()-> new BowChargerItemAnimated(IBBlock.BOW_CHARGER.get() ,new Item.Properties().tab(IBCreativeTab.TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEM.register(eventBus);

@@ -1,23 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "#E#",
-    "EOE",
-    "#E#"
-  ],
-  "key": {
-    "#": {
-      "item": "minecraft:totem_of_undying"
-    },
-    "E": {
-      "item": "minecraft:end_crystal"
-    },
-    "O": {
+  "type": "improvedbow:bow_charger",
+  "ingredients": [
+    {
       "item": "improvedbow:blood_bow_lvl7"
+    },
+    {
+      "item": "minecraft:end_crystal"
     }
-  },
-  "result": {
-    "item": "improvedbow:blood_bow_lvl8",
-    "count": 1
+  ],
+  "soul_collectors": 20,
+  "output": {
+    "item": "improvedbow:blood_bow_lvl8"
   }
 }

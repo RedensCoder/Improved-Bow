@@ -1,7 +1,5 @@
 {
   "variants": {
-    "": {
-      "model": "improvedbow:block/bow_charger"
-    }
+    "": { "model": "improvedbow:block/bow_charger" }
   }
 }

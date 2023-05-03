@@ -1,12 +1,15 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "improvedbow:blood_bow_lvl3"
-  },
-  "addition": {
-    "item": "improvedbow:terablood_block"
-  },
-  "result": {
+  "type": "improvedbow:bow_charger",
+  "ingredients": [
+    {
+      "item": "improvedbow:blood_bow_lvl3"
+    },
+    {
+      "item": "improvedbow:terablood_block"
+    }
+  ],
+  "soul_collectors": 5,
+  "output": {
     "item": "improvedbow:blood_bow_lvl4"
   }
 }

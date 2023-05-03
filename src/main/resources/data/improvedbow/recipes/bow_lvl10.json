@@ -1,12 +1,15 @@
 {
-  "type": "minecraft:smithing",
-  "base": {
-    "item": "improvedbow:blood_bow_lvl9"
-  },
-  "addition": {
-    "item": "improvedbow:dragon_eye"
-  },
-  "result": {
+  "type": "improvedbow:bow_charger",
+  "ingredients": [
+    {
+      "item": "improvedbow:blood_bow_lvl9"
+    },
+    {
+      "item": "improvedbow:dragon_eye"
+    }
+  ],
+  "soul_collectors": 25,
+  "output": {
     "item": "improvedbow:blood_bow_lvl10"
   }
 }
