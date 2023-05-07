@@ -1,0 +1,18 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bow_charger.idle": {
+			"animation_length": 5,
+			"bones": {
+				"cube": {
+					"rotation": {
+						"vector": ["math.cos(query.anim_time*120)", "math.cos(query.anim_time*120)", "math.cos(query.anim_time*120)"]
+					},
+					"position": {
+						"vector": [0, "math.sin(query.anim_time*120)", 0]
+					}
+				}
+			}
+		}
+	}
+}
