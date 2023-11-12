@@ -4,8 +4,8 @@ import com.Pherment.ImprovedBow.ImprovedBow;
 import com.Pherment.ImprovedBow.client.ClientNeedSCData;
 import com.Pherment.ImprovedBow.client.ClientSCData;
 import com.mojang.blaze3d.systems.RenderSystem;
-import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.network.chat.Component;
@@ -23,36 +23,39 @@ public class BowChargerScreen extends AbstractContainerScreen<BowChargerMenu> {
     @Override
     protected void init() {
         super.init();
+        this.inventoryLabelY = 10000;
+        this.titleLabelY = 10000;
     }
 
     @Override
-    protected void renderBg(PoseStack pPoseStack, float pPartialTick, int pMouseX, int pMouseY) {
+    protected void renderBg(GuiGraphics guiGraphics, float pPartialTick, int pMouseX, int pMouseY) {
         RenderSystem.setShader(GameRenderer::getPositionTexShader);
         RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
         RenderSystem.setShaderTexture(0, TEXTURE);
         int x = (width - imageWidth) / 2;
         int y = (height - imageHeight) / 2;
 
-        this.blit(pPoseStack, x, y, 0, 0, imageWidth, imageHeight);
-        renderProgressArrow(pPoseStack, x, y);
+        guiGraphics.blit(TEXTURE,x, y, 0, 0, imageWidth, imageHeight);
+
+        renderProgressArrow(guiGraphics, x, y);
 
         if(!menu.isCrafting()) {
             if (ClientNeedSCData.getNeedSC() > ClientSCData.getPlayerSC()) {
-                drawString(pPoseStack, Minecraft.getInstance().font, Component.literal("Cost " + ClientNeedSCData.getNeedSC() + " SoulCollector"), 11, 20, 0xFFFFFF);
+                guiGraphics.drawString(Minecraft.getInstance().font, Component.literal("Cost " + ClientNeedSCData.getNeedSC() + " SoulCollector"), 11, 20, 0xFFFFFF);
             }
         }
     }
 
-    private void renderProgressArrow(PoseStack pPoseStack, int x, int y) {
+    private void renderProgressArrow(GuiGraphics guiGraphics, int x, int y) {
         if(menu.isCrafting()) {
-            blit(pPoseStack, x + 105, y + 33, 176, 0, 8, menu.getScaledProgress());
+            guiGraphics.blit(TEXTURE,x + 105, y + 33, 176, 0, 8, menu.getScaledProgress());
         }
     }
 
     @Override
-    public void render(PoseStack pPoseStack, int pMouseX, int pMouseY, float pPartialTick) {
-        renderBackground(pPoseStack);
-        super.render(pPoseStack, pMouseX, pMouseY, pPartialTick);
-        renderTooltip(pPoseStack, pMouseX, pMouseY);
+    public void render(GuiGraphics guiGraphics, int pMouseX, int pMouseY, float pPartialTick) {
+        renderBackground(guiGraphics);
+        super.render(guiGraphics, pMouseX, pMouseY, pPartialTick);
+        renderTooltip(guiGraphics, pMouseX, pMouseY);
     }
 }

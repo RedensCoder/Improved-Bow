@@ -9,7 +9,7 @@ import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.SlotItemHandler;
 
 public class BowChargerMenu extends AbstractContainerMenu {
@@ -18,20 +18,20 @@ public class BowChargerMenu extends AbstractContainerMenu {
     public final ContainerData data;
 
     public BowChargerMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-        this(id, inv, inv.player.level.getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(2));
+        this(id, inv, inv.player.level().getBlockEntity(extraData.readBlockPos()), new SimpleContainerData(2));
     }
 
     public BowChargerMenu(int id, Inventory inv, BlockEntity pEntity, ContainerData pData) {
         super(IBMenutypes.BOWCHARGER_MENU.get(), id);
         checkContainerSize(inv, 3);
         entity = (BowChargerAnimated) pEntity;
-        this.level = inv.player.level;
+        this.level = inv.player.level();
         this.data = pData;
 
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
 
-        this.entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY).ifPresent(handler -> {
+        this.entity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(handler -> {
             this.addSlot(new SlotItemHandler(handler, 0, 80, 15));
             this.addSlot(new SlotItemHandler(handler, 1, 121, 15));
             this.addSlot(new SlotItemHandler(handler, 2, 80, 60));

@@ -8,8 +8,6 @@ import com.Pherment.ImprovedBow.recipe.IBRecipes;
 import com.Pherment.ImprovedBow.screen.BowChargerScreen;
 import com.Pherment.ImprovedBow.screen.IBMenutypes;
 import com.Pherment.ImprovedBow.util.IBItemProperties;
-import com.Pherment.ImprovedBow.world.feature.IBConfiguredFeatures;
-import com.Pherment.ImprovedBow.world.feature.IBPlacedFeatures;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
@@ -25,9 +23,8 @@ import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
-import software.bernie.geckolib3.GeckoLib;
+import software.bernie.geckolib.GeckoLib;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(ImprovedBow.MODID)
 public class ImprovedBow
 {
@@ -39,6 +36,8 @@ public class ImprovedBow
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
 
+        IBCreativeTab.register(modEventBus);
+
         IBItems.register(modEventBus);
         IBBlock.register(modEventBus);
         IBBlockEntities.register(modEventBus);
@@ -46,9 +45,6 @@ public class ImprovedBow
         IBRecipes.register(modEventBus);
 
         GeckoLib.initialize();
-
-        IBConfiguredFeatures.register(modEventBus);
-        IBPlacedFeatures.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }

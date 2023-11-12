@@ -27,7 +27,7 @@ public class BowCharger extends BaseEntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pPos, BlockState pState) {
-        return IBBlockEntities.BOW_CHARGER.get().create(pPos, pState);
+        return new BowChargerAnimated(pPos, pState);
     }
 
     @Override

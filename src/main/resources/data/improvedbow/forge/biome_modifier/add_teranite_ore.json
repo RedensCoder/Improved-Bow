@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
   "biomes": "#minecraft:is_overworld",
-  "features": "improvedbow:teranite_ore_placed",
+  "features": "improvedbow:ore_teranite",
   "step": "underground_ores"
 }

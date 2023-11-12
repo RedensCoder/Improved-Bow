@@ -21,26 +21,28 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.capabilities.Capability;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import software.bernie.geckolib3.core.IAnimatable;
-import software.bernie.geckolib3.core.PlayState;
-import software.bernie.geckolib3.core.builder.AnimationBuilder;
-import software.bernie.geckolib3.core.controller.AnimationController;
-import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
-import software.bernie.geckolib3.core.manager.AnimationData;
-import software.bernie.geckolib3.core.manager.AnimationFactory;
+import software.bernie.geckolib.animatable.GeoBlockEntity;
+import software.bernie.geckolib.core.animatable.GeoAnimatable;
+import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
+import software.bernie.geckolib.core.animation.*;
+import software.bernie.geckolib.core.object.PlayState;
+import software.bernie.geckolib.util.RenderUtils;
 
 import java.util.Optional;
 
-public class BowChargerAnimated extends BlockEntity implements IAnimatable, MenuProvider {
+public class BowChargerAnimated extends BlockEntity implements GeoBlockEntity, MenuProvider {
     protected final ContainerData data;
     private int progress = 0;
     private int maxProgress = 78;
+
+    private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
 
     public BowChargerAnimated(BlockPos pPos, BlockState pBlockState) {
         super(IBBlockEntities.BOW_CHARGER.get(), pPos, pBlockState);
@@ -69,24 +71,24 @@ public class BowChargerAnimated extends BlockEntity implements IAnimatable, Menu
         };
     }
 
-    private AnimationFactory factory = new AnimationFactory(this);
-
     @Override
-    public void registerControllers(AnimationData data) {
-        data.addAnimationController(new AnimationController<BowChargerAnimated>(
-                this, "controller", 0, this::predicate
-        ));
+    public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
+        controllerRegistrar.add(new AnimationController<>(this, "controller", 0, this::predicate));
     }
 
-    private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
-        event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.bow_charger.idle", true));
-
+    private <T extends GeoAnimatable> PlayState predicate(AnimationState<T> tAnimationState) {
+        tAnimationState.getController().setAnimation(RawAnimation.begin().then("animation.bow_charger.idle", Animation.LoopType.LOOP));
         return PlayState.CONTINUE;
     }
 
     @Override
-    public AnimationFactory getFactory() {
-        return this.factory;
+    public AnimatableInstanceCache getAnimatableInstanceCache() {
+        return cache;
+    }
+
+    @Override
+    public double getTick(Object blockEntity) {
+        return RenderUtils.getCurrentTick();
     }
 
     // CUSTOM FEATURES
@@ -94,6 +96,9 @@ public class BowChargerAnimated extends BlockEntity implements IAnimatable, Menu
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
+            if(!level.isClientSide()) {
+                level.sendBlockUpdated(getBlockPos(), getBlockState(), getBlockState(), 3);
+            }
         }
     };
 
@@ -112,7 +117,7 @@ public class BowChargerAnimated extends BlockEntity implements IAnimatable, Menu
 
     @Override
     public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
-        if (cap == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) {
+        if (cap == ForgeCapabilities.ITEM_HANDLER) {
             return lazyItemhandler.cast();
         }
 
@@ -185,7 +190,7 @@ public class BowChargerAnimated extends BlockEntity implements IAnimatable, Menu
             entity.itemHandler.extractItem(0, 1, false);
             entity.itemHandler.extractItem(1, 1, false);
             ClientSCData.set(ClientSCData.getPlayerSC() - recipe.get().getSc());
-            entity.itemHandler.setStackInSlot(2, new ItemStack(recipe.get().getResultItem().getItem(),
+            entity.itemHandler.setStackInSlot(2, new ItemStack(recipe.get().getResultItem(null).getItem(),
                     entity.itemHandler.getStackInSlot(2).getCount() + 1));
 
             entity.resetProgress();
@@ -207,7 +212,7 @@ public class BowChargerAnimated extends BlockEntity implements IAnimatable, Menu
         Optional<BowChargerRecipe> recipe = level.getRecipeManager().getRecipeFor(BowChargerRecipe.Type.INSTANCE, inventory, level);
 
         return recipe.isPresent() && canInsertAmountIntoOutputSlot(inventory) &&
-                canInsertItemIntoOutputSlot(inventory, recipe.get().getResultItem());
+                canInsertItemIntoOutputSlot(inventory, recipe.get().getResultItem(null));
     }
 
     private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory, ItemStack itemStack) {

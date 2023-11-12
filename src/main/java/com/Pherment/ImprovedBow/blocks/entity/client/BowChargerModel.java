@@ -3,9 +3,9 @@ package com.Pherment.ImprovedBow.blocks.entity.client;
 import com.Pherment.ImprovedBow.ImprovedBow;
 import com.Pherment.ImprovedBow.blocks.entity.custom.BowChargerAnimated;
 import net.minecraft.resources.ResourceLocation;
-import software.bernie.geckolib3.model.AnimatedGeoModel;
+import software.bernie.geckolib.model.GeoModel;
 
-public class BowChargerModel extends AnimatedGeoModel<BowChargerAnimated> {
+public class BowChargerModel extends GeoModel<BowChargerAnimated> {
 
     @Override
     public ResourceLocation getModelResource(BowChargerAnimated object) {

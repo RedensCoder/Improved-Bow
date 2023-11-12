@@ -13,9 +13,9 @@ import net.minecraftforge.registries.RegistryObject;
 public class IBMenutypes {
     public static final DeferredRegister<MenuType<?>> MENUS = DeferredRegister.create(ForgeRegistries.MENU_TYPES, ImprovedBow.MODID);
 
-    public static final RegistryObject<MenuType<BowChargerMenu>> BOWCHARGER_MENU = registerMenuType(BowChargerMenu::new, "bowcharger_menu");;
+    public static final RegistryObject<MenuType<BowChargerMenu>> BOWCHARGER_MENU = registerMenuType("bowcharger_menu", BowChargerMenu::new);;
 
-    private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory, String name) {
+    private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>> registerMenuType(String name, IContainerFactory<T> factory) {
         return MENUS.register(name, () -> IForgeMenuType.create(factory));
     }
 
